@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 ALIGN="center">Портфолио</h1>
+        <p>Здравствуйте, меня зовут {{name}}!</p>
+        <p>Моя почта: {{email}}</p>
+        <h4>Мои проекты в gitlab:</h4>
+
+        <ul>
+            {% for project in projects %}
+                <li>
+                    <a href="{{project.http_url_to_repo}}">{{project.name}}</a>
+                    <p>Описание: {{project.description}}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

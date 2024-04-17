@@ -1,0 +1,8 @@
+zuliprc
+resume.txt
+.env
+__pycache__
+venv
+src/__pycache__
+public/index.html
+.vscode
