@@ -11,14 +11,14 @@
 <body>
     <div class="container">
         <h1 ALIGN="center">Портфолио</h1>
-        <p>Здравствуйте, меня зовут {{name}}!</p>
+        <p>Здравствуйте, меня зовут {{name.full_name}}!</p>
         <p>Моя почта: {{email}}</p>
-        <h4>Мои проекты в gitlab:</h4>
+        <h4>Мои проекты в github:</h4>
 
         <ul>
             {% for project in projects %}
                 <li>
-                    <a href="{{project.http_url_to_repo}}">{{project.name}}</a>
+                    <a href="{{project.html_url}}">{{project.name}}</a>
                     <p>Описание: {{project.description}}</p>
                 </li>
             {% endfor %}

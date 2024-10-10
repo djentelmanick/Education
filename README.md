@@ -1,4 +1,4 @@
-# Создание своего резюме через GitLab 
+# Создание своего резюме через GitHub
 
 Программа для заполнения резюме по информации, полученной из API
 
@@ -7,7 +7,7 @@
 1. Клонировать репозиторий:
 
     ```bash
-    git clone https://git.miem.hse.ru/biv23x-ps/dakaznacheev
+    git clone https://github.com/djentelmanick/Education
     ```
    
 2. Перейти в директорию проекта:
@@ -16,13 +16,13 @@
     cd ваш_проект
     ```
 
-4. Cоздайте виртуальное окружение
+3. Cоздайте виртуальное окружение
 
     ```bash
     python3 -m venv venv
     ```
 
-5. Активируйте виртуальное окружение
+4. Активируйте виртуальное окружение
 
     - Unix
 
@@ -32,28 +32,28 @@
 
     - Windows
 
-    ```
+    ```bash
     venv\Scripts\activate
     ```
 
-3. Установить зависимости:
+5. Установить зависимости:
 
     ```bash
     pip install -r requirements.txt
     ```
 
-4. Заполните данные в .env
+6. Заполните данные в .env
 
     ```bash
-    GITLAB_KEY = {your personal acces token}
-    GITLAB_API_URL = https://git.miem.hse.ru/api/v4/projects
+    GITHUB_KEY = {your personal acces token}
+    GITHUB_NAME = 
     ```
 
 ## Использование
 
-    ```bash
-    python main.py
-    ```
+```bash
+python main.py
+```
 
 ## Роуты
 
